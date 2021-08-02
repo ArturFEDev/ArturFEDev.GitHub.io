@@ -5,7 +5,22 @@
     <meta name="description" content="Это моя первая страница...">
     <meta name="autor" content="Artur">
     <meta name="robots" content="all">
-    <meta propety="og:title" content="Это моя первая страница...">
+    <meta property="og:title" content="Это моя первая страница...">
+    <style type="text/css">
+        .title{
+                color: #333;
+                font-size: 32px;
+                text-transform: uppercase;
+                font-weight: bold;
+        }
+       </style>
+        <style type="text/css">
+        .base {
+                color: #333;
+                font-size: 23px;
+                text-transform: uppercase;
+                font-weight: bold;
+            </style>
 
     <title>ArturFEDev Font-End Developer</title>
 </head>
@@ -33,24 +48,23 @@
     </div>
 </div>
 
-<heder>
+<header>
 <div class="about__title">
 <div class="container">
+      <font class="title">Обо мне</font><p></p>
        <div class="about__text">
-            <h1>обо мнe</h1>
-
 <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae.</div>
 <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sint mollitia sed amet provident est obcaecati debitis doloremque, minus nobis!</div>
         </div>
         </div>
         <a href="https://perm.hh.ru/resume/5f565f48ff086b293a0039ed1f6265586d6777" target="_blank">Скачать резюме</a>
-        </div>
-</heder>
+</div>
+</header>
 
-<heder>
+<header>
     <div class="about__title">
-       <div class="about__text">
-            <h1>Что я умею</h1>
+       <div class="about__text"><p></p>
+            <font class="title">что я умею</font><p></p>
             <div class="skill">
             <ul>
                 <li><b>Веб-дизайн</b></li><p>Lorem ipsum dolor sit amet.</p>
@@ -61,11 +75,11 @@
             </div>
     </div>
     </div>
-</heder>
+</header>
 
-<heder>
-    <div class="case">
-       <h1>Кейсы</h1>
+<header>
+    <div class="case"><p></p>
+        <font class="title">кейсы</font><p></p>
        <div class="case__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, consequuntur.</div>
        <p><img src="../MyFirstProject/img/Maket_03.png" alt=""></p>
 <ul>
@@ -74,13 +88,13 @@
                 <li><b>Название проекта</b></li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim perspiciatis ullam officiis reprehenderit aperiam! Adipisci placeat dicta sapiente nesciunt tempore!</p>
             </ul>
 
-<heder>
+<header>
 <div class="price">
 <div class="container">
-       <div class="pricet__text">
-            <h1>Расчет стоимости</h1></div>
+       <div class="pricet__text"></div><p></p>
+        <font class="title">кейсы</font><p></p>
 
-            <h1>Типа сайта</h1>
+            <font class="base">Типа сайта</font><p></p>
                     <select name="List" id="1">
                     <option value="null"></option>
                     <option value="Low">Low</option>
@@ -88,9 +102,9 @@
                     <option value="Hight">Hight</option>
 
 
-</select>
+</select><p></p>
 
-            <h1>Дизайн</h1>
+            <font class="base">Дизайн</font><p></p>
                     <select name="List" id="2">
                     <option value="null"></option>
                     <option value="Sport">Sport</option>
@@ -98,8 +112,8 @@
                     <option value="People">People</option>
 
 
-</select>
-            <h1>Адаптивность</h1>
+</select><p></p>
+            <font class="base">Адаптивность</font><p></p>
                     <select name="List" id="3">
                     <option value="null"></option>
                     <option value="Cross">Cross</option>
@@ -115,9 +129,9 @@
 <div class="price"><b>Стоимость</b>
 <div class="price__number">0</div>
 </div>
-</heder>
+</header>
 </div>
-</heder>
+</header>
 
 <div class="statictics">
     <div class="container">
@@ -146,8 +160,8 @@
 
 <div class="feedback">
 <div class="container">
-       <div class="feedback__text">
-            <h1>Отзывы</h1><p></p>
+       <div class="feedback__text"><p></p>
+            <font class="title">Отзывы</font><p></p>
             <img class="img__feedback "src="/MyFirstProject/img/feedback_07.png" alt="">
 
 <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum qui dicta adipisci itaque perspiciatis, ipsa magni neque veritatis. Ipsa, nobis.</div>
@@ -161,16 +175,16 @@
 
 <div class="contacts">
 <div class="container">
-       <div class="contacts__text">
-            <h1>Контакты</h1><p></p>
+       <div class="contacts__text"><p></p>
+             <font class="title">Контакты</font><p></p>
               <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, pariatur.</div>
 <span> СПБ </span><span> info@mail.com </span><span> +79999999 </span>
-              <div class="contacts__text">
-            <h1>Оставьте мне сообщение</h1><p></p>
+              <div class="contacts__text"><p></p>
+             <font class="title">Оставьте мне сообщение</font><p></p>
 
                 <input type="text" name="text_input" value="" placeholder="Введите ваше имя">
                 <input type="text" name="text_input" value="" placeholder="Email"><p></p>
-                <input type="text" name="text_input" value="" placeholder="Сообщение">
+                <input type="textarea" name="text_input" value="" placeholder="Сообщение">
                 <input type="reset" value="отправить">
                            </div>
            </div>
