@@ -2,6 +2,77 @@ body {
     font-family: arial, sans-serif;
 }
 
+/* header */
+.header {
+    width: 100%;
+    height: 600px;
+    top: 0;
+}
+
+.header__inner {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: #f38181;
+    }
+.header__title {
+    width: 500px;
+    height: 150px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+
+
+/* container */
+.skill_container {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.container__text {
+    width: 500px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.title__container {
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title__container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.title__container h4 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+
+.title__container input {
+    height: 40px;
+    color: #6d7682;
+    text-align: center;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+    border: 2px solid #6d7682;
+    border-radius: 10px;
+    background: none;
+}
+
+/* nav */
 nav {
     width: 100%;
     height: 60px;
@@ -31,7 +102,7 @@ nav {
     font-size: 16px;
     text-transform: uppercase;
 }
-
+/* Manin */
 .main {
     width: 100%;
     height: calc(100% - 60px);
@@ -39,35 +110,109 @@ nav {
     background: url(../img/bg_boy.png) 90% 100%/auto 85% no-repeat ,url(../img/bg.png) center/cover no-repeat;
 }
 
-.title__container {
-    float: left;
-    margin: 432px 0px 0px 404px;
-    color: #2c384a;
-    text-align: center;
+
+/* about */
+
+.about {
+width: 100%;
+    height: 410px;
+        background: url(../img/photoshop/about_bg.png) center no-repeat;
 }
 
-.title__container h1 {
-    font-size: 60px;
-    font-weight: bold;
+
+
+
+.about__title {
+    text-align: justify;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    color: #8d929a;
+    margin: 25px auto 0px;
+}
+.about__subtitle {
+    text-align: justify;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    color: #8d929a;
+    margin: 30px auto 0px;
 }
 
-.title__container h4 {
-    margin-top: 40px;
-    font-size: 22px;
-    color: #79818d;
-}
 
-.title__container input {
+
+.about__link {
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+    color: #8d929a;
     height: 40px;
-    border: 2px solid; color: #6d7682;
-    background: none;
-    border-right: 2px;
-    color: #6d7682;
+    width: 150px;
     text-align: center;
-    font-size: 13px;
-    padding: 0px 16px;
-    margin: 58px 14px 0px 14px;
+    margin: 40px auto 0;
+    padding: 10px 0px;
+    left: 0;
+    border: 2px solid;
+    border-radius: 5px;
 }
+
+.link__text {
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+    color: #8d929a;
+}
+
+.about__img {
+    margin: 0 150px 0px;
+}
+
+/* skill */
+.myskill {
+    width: 100%;
+    height: 520px;
+    background: url(../img/bg_skill.jpg) center/cover no-repeat;
+}
+
+
+.skill {
+    display: flex;
+}
+
+.skill__item {
+    flex: 1 1 0;
+}
+
+.skill_title {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #cf7600;
+    padding-top: 36px;
+}
+
+.skill_subtitle {
+    width: 350px;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    color: #8d929a;
+    margin: 20px 50px 0px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
