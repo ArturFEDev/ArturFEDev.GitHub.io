@@ -19,7 +19,7 @@ body {
     }
 .header__title {
     width: 500px;
-    height: 150px;
+    height: 160px;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
@@ -28,11 +28,17 @@ body {
     text-transform: uppercase;
 }
 
+.case__header {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
 
 /* container */
 .skill_container {
     width: 100%;
     height: 200px;
+    margin: 50px auto 0;
     text-align: center;
 }
 
@@ -40,6 +46,7 @@ body {
     width: 500px;
     height: 410px;
     margin: 0 auto;
+    background: none;
 }
 
 .title__container {
@@ -71,6 +78,21 @@ body {
     border-radius: 10px;
     background: none;
 }
+
+.case__container {
+    width: 200px;
+    height: 100px;
+    margin: auto 360px;
+    display: flex;
+    color: #3f495a;
+}
+
+.price_container {
+    width: 890px;
+    height: 620px;
+    margin: 0 auto;
+}
+
 
 /* nav */
 nav {
@@ -115,8 +137,8 @@ nav {
 
 .about {
 width: 100%;
-    height: 410px;
-        background: url(../img/photoshop/about_bg.png) center no-repeat;
+    height: 500px;
+    background: url(../img/photoshop/about_bg.png) cover center no-repeat;
 }
 
 
@@ -161,12 +183,13 @@ width: 100%;
 
 .about__img {
     margin: 0 150px 0px;
+
 }
 
 /* skill */
 .myskill {
     width: 100%;
-    height: 520px;
+    height: 500px;
     background: url(../img/bg_skill.jpg) center/cover no-repeat;
 }
 
@@ -194,20 +217,124 @@ width: 100%;
     color: #8d929a;
     margin: 20px 50px 0px;
     text-align: center;
+}
+
+/* case */
+
+.case {
+width: 100%;
+    height: 100vh;
+}
+
+.case__text {
+    text-align: justify;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    color: #8d929a;
+    text-align: center;
 
 }
 
+.case__img {
+    width: 1170px;
+    text-align: center;
+    margin: 40px auto 10px;
+    background: none;
+}
+
+.case_item {
+    display: block;
+    width: 200px;
+    height: 50px;
+    flex: 1 1 0;
 
 
+}
+
+.case__title {
+    width: 300px;
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto 0px 5px;
+}
+
+.case__suptitle {
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 5px auto 5px;
+}
+
+.case__about {
+    width: 850px;
+    height: 100px;
+
+}
+
+.case__btnlink {
+    width: 150px;
+    height: 23px;
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    border: 2px solid #63b5ae;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0px 20px 0px;
+    background-color: #63b5ae;
+    margin: auto 0px;
+}
 
 
+.case__about {
+    width: 850px;
+    font-size: 18px;
+    font-family: 'Calibri', sans-serif;
+    margin: 5px auto;
+}
+
+.case__link {
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
 
 
+/* Price */
 
+.price {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 24px;
+}
 
+.price__title {
+    font-size: 32px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
 
+}
 
+.price__suptitle {
+    font-size: 24px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
 
+}
+
+.select {
+    display: block;
+    max-width: 215px;
+    width: 100%;
+    position: relative;
+}
 
 
 
