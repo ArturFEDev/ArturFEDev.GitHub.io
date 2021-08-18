@@ -1,6 +1,7 @@
 body {
     font-family: arial, sans-serif;
 
+
 }
 
 hr {
@@ -11,11 +12,6 @@ hr {
 }
 
 /* header */
-.header {
-    width: 100%;
-    height: 600px;
-    top: 0;
-}
 
 .header__inner {
     content: "";
@@ -61,14 +57,14 @@ hr {
 .skill_container {
     width: 100%;
     height: 200px;
-    margin: 50px auto 0;
+
     text-align: center;
 
 }
 
 .container__text {
     width: 500px;
-    height: 410px;
+    height: 440px;
     margin: 0 auto;
     background: none;
 }
@@ -79,9 +75,9 @@ hr {
     color: #2c384a;
     text-align: center;
     opacity: 0;
-    -webkit-animation: titlemove 1s ease forwards;
-    -o-animation: titlemove 1s ease forwards;
-    animation: titlemove 1s ease forwards;
+    -webkit-animation: titlemove 1.4s ease forwards;
+    -o-animation: titlemove 1.4s ease forwards;
+    animation: titlemove 1.4s ease forwards;
     -webkit-animation-delay: 1s;
     -o-animation-delay: 1s;
     animation-delay: 1s;
@@ -112,12 +108,12 @@ hr {
 }
 
 .title__container input {
-    transition: all .2s;
-    transform: scale(1.);
+    transform: scale(1);
 }
 
 
 .title__container input:hover {
+    transition: all .4s ease 0;
     background: #344051;
     color: #fff;
 }
@@ -148,7 +144,7 @@ hr {
 
 .statictics__container {
     width: 1200px;
-    height: 200px;
+    height: 300px;
     margin: 50px auto 0;
     text-align: center;
 }
@@ -272,8 +268,7 @@ nav {
 
 .about {
     width: 100%;
-    height: 500px;
-    background: url(../img/photoshop/about_bg.png) cover center no-repeat;
+    height: 440px;
 }
 
 
@@ -311,9 +306,19 @@ nav {
     border-radius: 5px;
 }
 
+.about__link {
+    transform: scale(1, 1);
+}
+
 .about__link:hover {
     background-color: #344051;
     color: #fff;
+}
+
+.about__link:active {
+
+    transition: all .4s;
+    transform: scale(1.1, 1.1);
 }
 
 .link__text {
@@ -340,7 +345,7 @@ nav {
     display: flex;
     position: relative;
     transition: all .8s ease 0s;
-    transform-style:preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .skill__item {
@@ -366,12 +371,14 @@ nav {
 }
 
 .skill_skale {
-    transform: scale(1,1);
+    transition: all .2s;
+    transform: scale(1, 1);
 
 
 }
+
 .skill_skale:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
 
 /* case */
@@ -412,13 +419,13 @@ nav {
     font-family: Libre Franklin, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    margin: auto 0px 5px;
+    margin: auto 0px 10px;
 }
 
 .case__suptitle {
     font-size: 16px;
     font-family: Libre Franklin, sans-serif;
-    margin: 5px auto 5px;
+    margin: 10px auto 10px;
 }
 
 .case__about {
@@ -465,7 +472,8 @@ nav {
     height: 80%;
     text-align: center;
     font-size: 24px;
-    padding: 150px 0 150px 0;
+    padding: 90px 0 130px;
+    margin: 40px auto 0px;
 }
 
 .price__title {
@@ -528,18 +536,49 @@ nav {
 
 /* Statistics*/
 
+
 .statictics {
     width: 100%;
-    height: 420px;
-    background: url(../img/bg_stat.jpg) center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
 
+.header_paralax {
+    box-sizing: border-box;
+    transform-style: inherit;
+
+}
+
+.header_paralax:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: center;
+
+    background: url(../img/bg_stat.jpg) center/cover no-repeat;
+    transform: translateZ(-1px) scale(2);
+}
+
+
 .stat_skale {
-    transform: scale(1,1);
+    transition: all .2s;
+    transform: scale(1);
 }
 
 .stat_skale:hover {
-    transform: scale(1.2,1.2);
+
+    transform: scale(1.1, 1.1);
 }
 
 .stat {
@@ -548,8 +587,11 @@ nav {
 
 .stat__item {
     flex: 1 1 0;
-    width: 30px;
-    height: 100px;
+}
+
+.stat__item {
+    padding-top: 60px;
+
 }
 
 .stat__count {
@@ -570,10 +612,7 @@ nav {
     text-align: center;
 }
 
-.stat__img {
-    background-color: none;
-    background: none;
-}
+
 
 /* Feedback */
 
@@ -698,7 +737,10 @@ nav {
     height: 30px;
     border: 1px solid #fff;
     margin: 10px auto;
+}
 
+.input_btn:hover {
+    transform: scale(1);
 }
 
 .social__icon {
@@ -711,25 +753,20 @@ nav {
 }
 
 .social__item {
-    transform: scale(1,1);
+    transform: scale(1, 1);
 
 
 }
+
 .social__item:hover {
-    transform: scale(1.5,1.5);
+    transition: all .2s;
+    transform: scale(1.5, 1.5);
 }
 
 
 .social__item {
     width: 100px;
 
-}
-
-.animate__animated__contacts__item {
-    transform: scale(1,1);
-}
-.animate__animated__contacts__item:hover {
-    transform: scale(1.3,1.3);
 }
 
 
@@ -810,20 +847,3 @@ nav {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
